@@ -1,4 +1,4 @@
-import { FILTERS_BUTTONS } from "../consts"
+import { ALL_FILTERS, FILTERS_BUTTONS } from "../consts"
 import { type FilterValue } from "../types"
 
 interface Props {
@@ -7,7 +7,7 @@ interface Props {
 }
 
 export const Filters: React.FC<Props> = (
-    { filterSelected, onFilterChange }
+    { filterSelected = ALL_FILTERS.ALL, onFilterChange }
 ) => {
 
     return (
